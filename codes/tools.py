@@ -54,6 +54,23 @@ def generateFeature(tweets):
 
 #def generateFeatureAll(tweets):
 
+def MG(S,k=10):
+
+    count = np.zeros(k-1)
+    label = ['' for i in range(k-1)]
+
+    for char in S:
+        if char in label:
+            ind = label.index(char)
+            count[ind] = count[ind]+1
+        elif np.argwhere(count == 0.0).shape[0]:
+            first_zero_ind = np.argwhere(count == 0)[0][0]
+            label[first_zero_ind] = char
+            count[first_zero_ind] = 1
+        else:
+            count = count-1
+    return count, label
+
 
 
 def clustering(people, feature, nk):
@@ -92,6 +109,7 @@ def clustering(people, feature, nk):
 
     return phi
 
+# k means with hamming distance
 def clusteringH(people, feature, nk):
 
     n = len(feature.keys())
@@ -123,5 +141,4 @@ def clusteringH(people, feature, nk):
 
             if dist_x > dist_i:
                 phi[k] = i
-
     return phi

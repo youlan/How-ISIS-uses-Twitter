@@ -1,0 +1,52 @@
+
+For 112 users' tweets, collect tweets for each user first and then do clustering analysis.
+
+--------frequency words analysis for each clusters based on K means clustering--------------
+key words in cluster 0: 
+['anon', 'go', 'telegram', 'ctrlsec']
+key words in cluster 1: 
+['rage', 'die', 'gt', 'in']
+key words in cluster 2: 
+['mosqu', 'destroy', 'citi', 'regim']
+key words in cluster 3: 
+['armi', 'destroy', 'report', 'iraqi']
+key words in cluster 4: 
+['turkey', 'pkk', 'move', 'twitterkurd']
+
+---frequency words analysis for each clusters based on AgglomerativeClustering---
+key words in cluster 0: 
+['anon', 'go', 'telegram', 'ctrlsec']
+key words in cluster 1: 
+['rage', 'die', 'gt', 'in']
+key words in cluster 2: 
+['mosqu', 'destroy', 'citi', 'regim']
+key words in cluster 3: 
+['armi', 'destroy', 'report', 'iraqi']
+key words in cluster 4: 
+['turkey', 'pkk', 'move', 'twitterkurd']
+
+
+for all tweets, do the clustering analysis directly.
+
+--------frequency words analysis for each clusters based on K means clustering--------------
+key words in cluster 0: 
+['north', 'ramadi', 'tank', 'jurayishi']
+key words in cluster 1: 
+['state', 'tri', 'draw', 'turkey']
+key words in cluster 2: 
+['armi', 'near', 'border', 'tanf']
+key words in cluster 3: 
+['camp', 'damascu', 'conduct', 'battl']
+key words in cluster 4: 
+['south', 'rafahh', 'intern', 'rafi']
+---frequency words analysis for each clusters based on AgglomerativeClustering---
+key words in cluster 0: 
+['north', 'ramadi', 'tank', 'jurayishi']
+key words in cluster 1: 
+['state', 'tri', 'draw', 'turkey']
+key words in cluster 2: 
+['armi', 'near', 'border', 'tanf']
+key words in cluster 3: 
+['camp', 'damascu', 'conduct', 'battl']
+key words in cluster 4: 
+['south', 'rafahh', 'intern', 'rafi']
